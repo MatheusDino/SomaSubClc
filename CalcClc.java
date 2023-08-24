@@ -5,10 +5,11 @@ public class CalcClc
 	public static void main(String[] args) {
 	    
 	    Scanner scany = new Scanner(System.in);
-	    System.out.println("[Soma] ou [Sub]?");
+	    System.out.println("Deseja somar ou Subtrair?");
 		String operacao = " ";
 
 		while(!(operacao.toLowerCase().equals("soma")) && !(operacao.toLowerCase().equals("sub"))){
+			System.out.println("Lembre-se de digitar somente [Soma] ou [Sub].");
 	    	operacao = scany.nextLine().toLowerCase();
 		}
 		
