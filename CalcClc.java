@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CalczinhaSussa
+public class CalcClc
 {
 	public static void main(String[] args) {
 	    
@@ -17,5 +17,6 @@ public class CalczinhaSussa
 	    if("Sub".equals(operacao)){
 	        System.out.println("Essa operação dá: " + (num1 - num2));
 	    }
+		scany.close();
 	}
 }
