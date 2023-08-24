@@ -6,16 +6,25 @@ public class CalcClc
 	    
 	    Scanner scany = new Scanner(System.in);
 	    System.out.println("[Soma] ou [Sub]?");
-	    String operacao = scany.nextLine();
-	    System.out.println("Primeiro número?");
+		String operacao = " ";
+
+		while(!(operacao.toLowerCase().equals("soma")) && !(operacao.toLowerCase().equals("sub"))){
+	    	operacao = scany.nextLine().toLowerCase();
+		}
+		
+		
+		
+		System.out.println("Operacao selecionada --> " + operacao);
+	    System.out.println("Primeiro numero?");
 	    double num1 = scany.nextDouble();
-	    System.out.println("Segundo número?");
+		
+	    System.out.println("Segundo numero?");
 	    double num2 = scany.nextDouble();
-	    if("Soma".equals(operacao)){
-	        System.out.println("Essa operação dá: " + (num1 + num2));
+	    if("soma".equals(operacao)){
+	        System.out.println("Essa operacao resulta: " + (num1 + num2));
 	    }
-	    if("Sub".equals(operacao)){
-	        System.out.println("Essa operação dá: " + (num1 - num2));
+	    if("sub".equals(operacao)){
+	        System.out.println("Essa operacao resulta: " + (num1 - num2));
 	    }
 		scany.close();
 	}
