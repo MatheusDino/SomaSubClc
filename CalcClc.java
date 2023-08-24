@@ -13,13 +13,39 @@ public class CalcClc
 		}
 		
 		
+		double num1 = 0;
+		double num2 = 0;
 		
+		boolean checador = false;
+		String entrada = "";
 		System.out.println("Operacao selecionada --> " + operacao);
-	    System.out.println("Primeiro numero?");
-	    double num1 = scany.nextDouble();
 		
-	    System.out.println("Segundo numero?");
-	    double num2 = scany.nextDouble();
+		System.out.println("Primeiro numero?");
+		while(checador == false){
+			entrada = scany.nextLine();
+			try{
+				num1 = Double.parseDouble(entrada);
+				checador = true;
+			}
+			catch(NumberFormatException e) {
+				System.out.println("Por favor, digite um numero!");
+			}
+		}
+
+		checador = false;
+		entrada = "";
+		System.out.println("Segundo numero?");
+		while(checador == false){
+			entrada = scany.nextLine();
+			try{
+				num2 = Double.parseDouble(entrada);
+				checador = true;
+			}
+			catch(NumberFormatException e) {
+				System.out.println("Por favor, digite um numero!");
+			}
+		}
+	    
 	    if("soma".equals(operacao)){
 	        System.out.println("Essa operacao resulta: " + (num1 + num2));
 	    }
