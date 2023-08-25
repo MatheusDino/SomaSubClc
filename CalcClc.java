@@ -8,8 +8,8 @@ public class CalcClc
 	    System.out.println("Deseja somar ou Subtrair?");
 		String operacao = " ";
 
-		while(!(operacao.toLowerCase().equals("soma")) && !(operacao.toLowerCase().equals("sub"))){
-			System.out.println("Lembre-se de digitar somente [Soma] ou [Sub].");
+		while(!(operacao.toLowerCase().equals("soma")) && !(operacao.toLowerCase().equals("sub")) && !(operacao.toLowerCase().equals("par ou impar"))){
+			System.out.println("Lembre-se de digitar somente [Soma] ou [Sub] ou [Par ou Impar].");
 	    	operacao = scany.nextLine().toLowerCase();
 		}
 		
@@ -53,6 +53,13 @@ public class CalcClc
 	    if("sub".equals(operacao)){
 	        System.out.println("Essa operacao resulta: " + (num1 - num2));
 	    }
-		scany.close();
+		if("par ou impar".equals(operacao)){
+			if(num1 % num2 == 1){
+				System.out.println("Esse numero eh impar");
+			} else {
+				System.out.println("Esse numero eh par"); 
+			}
+		}
+		scany.close(); 
 	}
 }
