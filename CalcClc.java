@@ -57,9 +57,9 @@ public class CalcClc
 			if(num1 % num2 == 1){
 				System.out.println("Esse numero eh impar");
 			} else {
-				System.out.println("Esse numero eh par");
+				System.out.println("Esse numero eh par"); //the end
 			}
 		}
-		scany.close();
+		scany.close(); 
 	}
 }
