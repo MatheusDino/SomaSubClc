@@ -9,7 +9,7 @@ public class CalcClc
 		String operacao = " ";
 
 		while(!(operacao.toLowerCase().equals("soma")) && !(operacao.toLowerCase().equals("sub")) && !(operacao.toLowerCase().equals("par ou impar"))){
-			System.out.println("Lembre-se de digitar somente [Soma] ou [Sub] ou [par ou impar].");
+			System.out.println("Lembre-se de digitar somente [Soma] ou [Sub] ou [Par ou Impar].");
 	    	operacao = scany.nextLine().toLowerCase();
 		}
 		
@@ -57,7 +57,7 @@ public class CalcClc
 			if(num1 % num2 == 1){
 				System.out.println("Esse numero eh impar");
 			} else {
-				System.out.println("Esse numero eh par"); //the end
+				System.out.println("Esse numero eh par"); 
 			}
 		}
 		scany.close(); 
